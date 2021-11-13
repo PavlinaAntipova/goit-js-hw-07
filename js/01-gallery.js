@@ -4,7 +4,7 @@ import { galleryItems } from './gallery-items.js';
 
 const galleryContainerRef = document.querySelector(".gallery");
 
-const newElements = galleryItems.map(({ preview, original, description }) => `<a class="gallery__link" href="${original}"><img class="gallery__image" src="${preview}" data-source="${original}" alt="${description}"/><</a>`).join(' ');
+const newElements = galleryItems.map(({ preview, original, description }) => `<a class="gallery__link" href="${original}"><img class="gallery__image" src="${preview}" data-source="${original}" alt="${description}"/></a>`).join('');
 
 galleryContainerRef.innerHTML = newElements;
 
